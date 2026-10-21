@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        Driver Drowsiness Detection
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="/static/style.css"
+    >
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>
+        Driver Drowsiness Detection
+    </h1>
+
+    <p class="subtitle">
+        AI-Based Real-Time Monitoring
+    </p>
+
+    <div class="camera-box">
+
+        <video
+            id="video"
+            autoplay
+            playsinline>
+        </video>
+
+        <canvas
+            id="canvas"
+            style="display:none;">
+        </canvas>
+
+    </div>
+
+    <button id="startButton">
+        Start Detection
+    </button>
+
+    <div class="status-card">
+
+        <p>
+            Eyes:
+            <span id="eyes">
+                --
+            </span>
+        </p>
+
+        <p>
+            Yawn:
+            <span id="yawn">
+                --
+            </span>
+        </p>
+
+        <p>
+            Driver Status:
+            <span id="status">
+                READY
+            </span>
+        </p>
+
+    </div>
+
+    <div
+        id="warning"
+        class="warning">
+        WAKE UP!
+    </div>
+
+</div>
+
+<script src="/static/script.js"></script>
+
+</body>
+
+</html>
